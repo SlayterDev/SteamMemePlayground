@@ -2,23 +2,6 @@
 
 import UIKit
 
-let deposit = 100.0
-var saved = 0.0
-let growth = 1.002 // 1 percent growth per month
-
-let months = 6
-let days = months * 30
-
-for i in 0..<days {
-    if i % 30 == 0 {
-        saved += deposit
-    }
-    
-    saved *= growth
-}
-
-print(String(format: "\nTotal after 12 months you have: $%.2f", arguments: [saved]))
-
 let template = #imageLiteral(resourceName: "isnowplaying_720.png")
 let face = #imageLiteral(resourceName: "download.jpeg")
 
